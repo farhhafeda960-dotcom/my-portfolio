@@ -754,10 +754,12 @@
             <ul class="nav-links">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Data Analysis Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#certificates">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">🌙</button>
@@ -823,6 +825,28 @@
         </div>
     </section>
 
+    <!-- Education Section -->
+    <section id="education" class="reveal">
+        <div class="section-title">
+            <h2>My <span>Education</span></h2>
+            <p>Academic background and current university studies.</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Delta Technological University</h3>
+                <p><strong>Technology of Industry and Energy – Information Technology – Software</strong></p>
+                <p>2023–2027</p>
+            </div>
+            <div class="about-card">
+                <h3>Academic Status</h3>
+                <ul class="info-list">
+                    <li>🎓 4th Year Student</li>
+                    <li>⭐ Academic Standing: Excellent</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <!-- Skills Section (Updated with Data Analysis tools) -->
     <section id="skills" class="reveal">
     <div class="section-title">
@@ -845,15 +869,55 @@
     </div>
 </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="reveal">
+        <div class="section-title">
+            <h2>My <span>Experience</span></h2>
+            <p>Current practical training and professional development.</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>DEPI – Digital Egypt Pioneers Initiative</h3>
+                <p><strong>Data Analysis Track</strong></p>
+                <p>Aug 2026 – Present</p>
+                <p>Developing practical data analysis skills through structured training and hands-on projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="reveal">
+        <div class="section-title">
+            <h2>My <span>Services</span></h2>
+            <p>Simple data services focused on clear analysis and useful dashboards.</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h4>Power BI Dashboard</h4>
+                <p>Interactive dashboards with KPIs, charts, slicers, and clear data visualization.</p>
+            </div>
+            <div class="skill-card">
+                <h4>Data Cleaning & Preparation</h4>
+                <p>Cleaning, organizing, and preparing raw data for accurate and effective analysis.</p>
+            </div>
+            <div class="skill-card">
+                <h4>Data Analysis & Reporting</h4>
+                <p>Analyzing data, extracting useful insights, and presenting results in clear, easy-to-understand reports.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="reveal">
         <div class="section-title">
             <h2>Featured <span>Projects</span></h2>
-            <p>Click any project to view its concept image, full technical details, and QA/Data workflows</p>
+            <p>Click any project to view its concept image, details, tools, and key outcomes</p>
         </div>
 
         <div class="filter-buttons">
             <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="powerbi">Power BI</button>
+            <button class="filter-btn" data-filter="excel">Excel</button>
             <button class="filter-btn" data-filter="iot">IoT & Embedded</button>
             <button class="filter-btn" data-filter="web">Full-Stack Web</button>
             <button class="filter-btn" data-filter="mobile">Mobile App</button>
@@ -861,6 +925,61 @@
         </div>
 
         <div class="projects-grid">
+            <div class="project-card" data-category="powerbi" onclick="openModal('project5')">
+                <div class="project-img-box">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=80" alt="Superstore Sales Analysis Power BI Dashboard">
+                </div>
+                <div class="project-header">
+                    <span class="tag">Power BI</span>
+                    <h3>Superstore Sales Analysis</h3>
+                </div>
+                <div class="project-body">
+                    <p>Interactive Power BI dashboard analyzing sales, profit, products, regions, and business performance through KPIs and dynamic visuals.</p>
+                    <span style="color: var(--accent-rose); font-size: 0.9rem; font-weight: 600;">View Details &rarr;</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="excel" onclick="openModal('project6')">
+                <div class="project-img-box">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=80" alt="Superstore Sales Dashboard Excel">
+                </div>
+                <div class="project-header">
+                    <span class="tag">Excel</span>
+                    <h3>Superstore Sales Dashboard</h3>
+                </div>
+                <div class="project-body">
+                    <p>Excel dashboard analyzing sales and profit performance using PivotTables, PivotCharts, KPIs, and interactive slicers.</p>
+                    <span style="color: var(--accent-rose); font-size: 0.9rem; font-weight: 600;">View Details &rarr;</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="excel" onclick="openModal('project7')">
+                <div class="project-img-box">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&auto=format&fit=crop&q=80" alt="Customer and Order Analysis Excel">
+                </div>
+                <div class="project-header">
+                    <span class="tag">Excel</span>
+                    <h3>Customer & Order Analysis</h3>
+                </div>
+                <div class="project-body">
+                    <p>Analysis of customer orders, spending patterns, shipment performance, and repeat purchases to identify useful insights.</p>
+                    <span style="color: var(--accent-rose); font-size: 0.9rem; font-weight: 600;">View Details &rarr;</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="powerbi" onclick="openModal('project8')">
+                <div class="project-img-box">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&auto=format&fit=crop&q=80" alt="Job Market Analysis Dashboard">
+                </div>
+                <div class="project-header">
+                    <span class="tag">Power BI / Data Analysis</span>
+                    <h3>Job Market Analysis</h3>
+                </div>
+                <div class="project-body">
+                    <p>Dashboard focused on in-demand skills, job opportunities, salaries, and job market trends for students and job seekers.</p>
+                    <span style="color: var(--accent-rose); font-size: 0.9rem; font-weight: 600;">View Details &rarr;</span>
+                </div>
+            </div>
             <div class="project-card" data-category="iot" onclick="openModal('project1')">
                 <div class="project-img-box">
                     <img src="project_smart_home.jpg" alt="Smart Home IoT System" onerror="this.src='https://images.unsplash.com/photo-1558002038-1055907df827?w=600&auto=format&fit=crop&q=80'">
@@ -923,7 +1042,7 @@
     <section id="certificates" class="reveal">
         <div class="section-title">
             <h2>Certifications & <span>Achievements</span></h2>
-            <p>Click any certificate to view its official image and detailed scope</p>
+            <p>A selection of certifications, training programs, and achievements.</p>
         </div>
         <div class="cert-grid">
             <div class="cert-card" onclick="openModal('cert1')">
@@ -963,64 +1082,54 @@
                 </div>
             </div>
         </div>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h4>Huawei Certified ICT Associate (HCIA – AI)</h4>
+                    <p>Completed Huawei AI training with a focus on understanding how AI works.</p>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h4>Oracle NextGen Egypt</h4>
+                    <p>Completed course as part of professional learning and development.</p>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h4>DEPI – Data Analysis Track</h4>
+                    <p>Current professional training program focused on Data Analysis.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="reveal">
+    <!-- Call To Action Section -->
+    <section id="cta" class="reveal">
         <div class="section-title">
-            <h2>AM & Data Expertise <span>Insights Blog</span></h2>
-            <p>Read my thoughts on software quality assurance, data analytics, and testing lifecycles</p>
-        </div>
-        <div class="blog-grid">
-            <div class="blog-card" onclick="openModal('blog1')">
-                <div class="blog-img-box">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=80" alt="Data Analytics">
-                </div>
-                <div class="blog-info">
-                    <span class="tag">Data Analytics</span>
-                    <h4>Leveraging Data Analytics to Optimize Software Performance</h4>
-                    <p>How data insights and metrics improve decision-making and defect tracking in modern applications.</p>
-                    <span style="color: var(--accent-rose); font-size: 0.9rem; font-weight: 600;">Read Article &rarr;</span>
-                </div>
-            </div>
-            <div class="blog-card" onclick="openModal('blog2')">
-                <div class="blog-img-box">
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80" alt="QA Testing">
-                </div>
-                <div class="blog-info">
-                    <span class="tag">Software QA</span>
-                    <h4>The Crucial Role of QA in Modern Web & IoT Systems</h4>
-                    <p>Why rigorous test case planning and API testing prevent costly production failures in complex applications.</p>
-                    <span style="color: var(--accent-rose); font-size: 0.9rem; font-weight: 600;">Read Article &rarr;</span>
-                </div>
+            <h2>Have Data That <span>Needs Analysis?</span></h2>
+            <p>I can help you clean, analyze, and visualize your data through clear reports and interactive dashboards that make your data easier to understand.</p>
+            <div style="margin-top: 1.5rem;">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
             </div>
         </div>
     </section>
-
-    <!-- Modal Container -->
-    <div id="detailsModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <div id="modalBody"></div>
-        </div>
-    </div>
-
-    <button id="scrollTopBtn" onclick="scrollToTop()" title="Go to top">&uarr;</button>
 
     <!-- Contact Section -->
     <section id="contact" class="reveal">
         <div class="section-title">
             <h2>Get In <span>Touch</span></h2>
-            <p>Let's collaborate on your next QA testing project, data analysis, or software opportunity</p>
+            <p>Have a project or opportunity in Data Analysis? I'd love to hear from you.</p>
         </div>
         <div class="contact-container">
             <div class="contact-info">
-                <h3>Let's ensure flawless quality and data insights together.</h3>
-                <p>Feel free to reach out via phone, email, or professional networks.</p>
+                <h3>Let's turn your data into clear and meaningful insights.</h3>
+                <p>Feel free to reach out via phone, email, LinkedIn, or GitHub.</p>
                 <div class="contact-details">
                     <span class="contact-item">📞 01275037384</span>
                     <span class="contact-item">✉️ farhhafeda960@gmail.com</span>
-                    <a href="https://github.com/farhhafeda960-dotcom" target="_blank" class="contact-item" style="color: var(--accent-rose);">💻 GitHub Profile: farhhafeda960-dotcom</a>
+                    <a href="https://www.linkedin.com/in/farah-waell-933aa7321" target="_blank" rel="noopener" class="contact-item" style="color: var(--accent-rose);">💼 LinkedIn Profile</a>
+                    <a href="https://github.com/farhhafeda960-dotcom" target="_blank" rel="noopener" class="contact-item" style="color: var(--accent-rose);">💻 GitHub Profile: farhhafeda960-dotcom</a>
                 </div>
             </div>
             <form action="https://formspree.io/f/farhhafeda960" method="POST" class="contact-form">
@@ -1039,7 +1148,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Eng. Farah Wael Mohamed Hafeda. All rights reserved.</p>
+        <p>&copy; 2026 Farah Wael Mohamed Hafeda. All rights reserved.</p>
     </footer>
 
     <script>
@@ -1155,15 +1264,60 @@
         const contentData = {
             cvPreview: {
                 title: "Curriculum Vitae Preview - Eng. Farah Wael",
-                desc: "Quick summary of professional QA, Data Analytics, and testing credentials.",
+                desc: "Quick summary of Farah's education, Data Analysis skills, training, and portfolio work.",
                 details: [
-                    "Name: Eng. Farah Wael Mohamed Hafeda",
-                    "Education: 4th-Year Student, Faculty of Printing Industry Technology, Damietta University.",
-                    "Core Skills: Data Analysis, SQL Querying, Manual & Automation Testing, Postman API Testing.",
-                    "Achievements: NASA Space Apps Global Nominee, Cisco Data Analytics Essentials & IBM SkillsBuild Certified.",
+                    "Name: Farah Wael Mohamed Hafeda",
+                    "Education: 4th-Year IT Student, Delta Technological University, Information Technology – Software (2023–2027).",
+                    "Core Skills: Excel, Power BI, SQL, Data Cleaning, Data Visualization, DAX, Data Modeling, and Python.",
+                    "Current Training: DEPI – Data Analysis Track.",
                     "Contact: farhhafeda960@gmail.com | Phone: 01275037384"
                 ],
                 actionBtn: '<a href="cv.pdf" download class="btn btn-primary" style="margin-top: 15px; display: inline-block;">📥 Download Full CV File</a>'
+            },
+            project5: {
+                title: "Superstore Sales Analysis",
+                img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=80",
+                desc: "An interactive Power BI dashboard for analyzing sales, profit, products, regions, and overall business performance.",
+                details: [
+                    "Cleaned and prepared the Superstore dataset for analysis.",
+                    "Built data models, DAX measures, calculated columns, KPIs, slicers, filters, and drill-through interactions.",
+                    "Created Executive Analysis and Product Analysis report pages with interactive visualizations.",
+                    "Tools Used: Power BI, Power Query, DAX."
+                ]
+            },
+            project6: {
+                title: "Superstore Sales Dashboard",
+                img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=80",
+                desc: "An Excel dashboard for monitoring sales and profit performance through interactive summaries and visuals.",
+                details: [
+                    "Built PivotTables and PivotCharts to summarize sales and profit performance.",
+                    "Added KPIs including Sales, Profit, and regional performance indicators.",
+                    "Used slicers for Region, Segment, and Category analysis.",
+                    "Tools Used: Microsoft Excel, PivotTables, PivotCharts, Slicers."
+                ]
+            },
+            project7: {
+                title: "Customer & Order Analysis",
+                img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&auto=format&fit=crop&q=80",
+                desc: "An Excel analysis focused on customer spending, order quantities, shipment performance, and repeat purchases.",
+                details: [
+                    "Calculated average spending, order quantity, and shipment days.",
+                    "Identified the top 5 customers based on the available data.",
+                    "Added monthly filtering and analysis for order activity.",
+                    "Used conditional formatting to highlight repeated purchases.",
+                    "Tools Used: Microsoft Excel."
+                ]
+            },
+            project8: {
+                title: "Job Market Analysis",
+                img: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&auto=format&fit=crop&q=80",
+                desc: "A data analysis dashboard focused on the job market and the information students and job seekers need to understand opportunities.",
+                details: [
+                    "Analyzed in-demand skills and job opportunities.",
+                    "Explored salary information and job market trends.",
+                    "Designed visual insights to make the results easier to understand for students and job seekers.",
+                    "Tools Used: Power BI, Data Analysis."
+                ]
             },
             project1: {
                 title: "Smart Home IoT System",
